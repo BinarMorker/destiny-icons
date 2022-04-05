@@ -2,7 +2,7 @@
   "name": "destiny-icons-index",
   "version": "0.2.0",
   "private": true,
-  "homepage": "https://justrealmilk.github.io/destiny-icons/",
+  "homepage": "https://destiny-icons.netlify.app",
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

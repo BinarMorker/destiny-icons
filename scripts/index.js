@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const root = '../';
+const root = './';
 
 function dirTree(filename) {
 
@@ -11,7 +11,7 @@ function dirTree(filename) {
       name: path.basename(filename)
     };
   
-  if (['/.git', '/LICENSE', '/readme.md', '/docs', '/docs-build'].includes(info.path)) return false;
+  if (['/.git', '/LICENSE', '/readme.md', '/docs', '/build', '/src', '/public', '/packages.json', '/packages-lock.json'].includes(info.path)) return false;
 
   if (stats.isDirectory()) {
     info.type = 'folder';
